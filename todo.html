@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        .project-container {
+            max-width: 960px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+
+        .project-container h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-container p {
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .screenshot-grid {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .screenshot-grid img {
+            width: 100%;
+            max-width: 460px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        .buttons {
+            margin-top: 1.5rem;
+        }
+
+        .buttons a {
+            display: inline-block;
+            margin-right: 1rem;
+            padding: 0.6rem 1rem;
+            background: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background 0.3s ease;
+        }
+
+        .buttons a:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="project-container">
+        <h1>📝 To-Do List</h1>
+        <p>
+            A responsive, modern to-do list app built with HTML, CSS, and JavaScript. Features include task priorities,
+            inline editing, filters (All, Active, Completed), persistent local storage, and dark mode toggle with theme
+            memory.
+        </p>
+
+        <div class="screenshot-grid">
+            <img src="assets/images/light_to-do_list.png" alt="To-Do List in Light Mode" />
+            <img src="assets/images/dark_to-do_list.png" alt="To-Do List in Dark Mode" />
+        </div>
+
+        <div class="buttons">
+            <a href="https://your-live-demo-link.com" target="_blank">🔗 Live Demo</a>
+            <a href="https://github.com/yourusername/todo-list" target="_blank">📁 GitHub Repo</a>
+        </div>
+    </div>
+
+    <section class="project-tech">
+        <h2>Tech Stack</h2>
+        <p>HTML, CSS, JavaScript (Vanilla JS).</p>
+    </section>
+
+    <section class="project-links">
+        <a href="https://github.com/TanvirAhmed162001/learnhub-backend" class="btn" target="_blank">View Code</a>
+        <a href="#" class="btn disabled" aria-disabled="true">Live Demo (Coming Soon)</a>
+        <a href="projects.html" class="back-link">← Back to Projects</a>
+    </section>
+    </main>
+
+    <!-- Footer -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+   <footer class="footer">
+  <div class="footer-container">
+    <p>&copy; 2025 Tanvir Ahmed. All Rights Reserved.</p>
+    
+    <!-- Font Awesome icons -->
+    <div class="social-icons">
+      <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:your@email.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+
+</html>

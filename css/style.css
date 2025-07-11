@@ -1,0 +1,492 @@
+/* === Custom Style Guide CSS for Tanvir Ahmed's Portfolio === */
+
+/* 1. Base Typography */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #020C1B;
+    color: #CCD6F6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 0;
+}
+
+/* 2. Header */
+.header {
+    background-color: #0A192F;
+    padding: 20px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: #CCD6F6;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    color: #64FFDA;
+}
+
+/* Logo */
+.logo img {
+  height: 48px; /* Adjust this size as needed */
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+}
+
+/* 3. Hero Section */
+.hero {
+    background: linear-gradient(120deg, #0A192F 0%, #020C1B 100%);
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #64FFDA;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #8892B0;
+}
+
+.cta-button {
+    background-color: #64FFDA;
+    color: #0A192F;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #112240;
+    color: #64FFDA;
+}
+
+/* 4. Skills Section */
+.skills {
+    background-color: #112240;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.skill-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: #0A192F;
+    color: #64FFDA;
+    padding: 16px 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* ========== About Section Layout ========== */
+.about-section {
+  padding: 60px 20px;
+  background: #f9f9f9;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* ========== Left Side (Profile + Text) ========== */
+.about-left {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-image {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
+}
+
+.about-text p {
+  margin-bottom: 16px;
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* ========== Right Side (Skills + CV Button) ========== */
+.about-right {
+  flex: 1;
+  min-width: 280px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+/* ========== Skill Cards ========== */
+.skill-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  max-width: 350px;
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-card img {
+  width: 40px;
+  height: 40px;
+}
+
+.skill-card p {
+  margin: 0;
+  font-size: 1rem;
+  color: #444;
+}
+
+/* ========== CV Button ========== */
+.cv-button {
+  margin-top: 30px;
+  padding: 12px 28px;
+  background-color: #2d2dff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 14px rgba(45, 45, 255, 0.3);
+}
+
+.cv-button:hover {
+  background-color: #1a1aff;
+  transform: scale(1.05);
+}
+
+/* ========== Project Section Layout ========== */
+.projects-section {
+  padding: 60px 20px;
+  background: #f9f9f9;
+}
+
+.projects-section h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #1a1a1a;
+  font-weight: 700;
+}
+
+/* ========== Project Cards Layout ========== */
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+/* ========== Project Card Style ========== */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12);
+}
+
+.project-card h2 {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+  color: #222;
+  font-weight: 600;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+/* ========== Project Screenshot ========== */
+.project-card img {
+  width: 100%;
+  border-radius: 14px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+/* ========== Project Button Link ========== */
+.project-card a {
+  display: inline-block;
+  align-self: flex-start;
+  background-color: #1a1aff;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 10px 24px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.project-card a:hover {
+  background-color: #0000cc;
+  transform: scale(1.05);
+}
+
+
+/* ========== Contact Section ========== */
+.contact-section {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 40px 20px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  text-align: center;
+}
+
+.contact-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact-section p {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+/* ========== Contact Form ========== */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+}
+
+.contact-form label {
+  font-weight: 600;
+  color: #444;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #2d2dff;
+}
+
+/* ========== reCAPTCHA ========== */
+.g-recaptcha {
+  margin: 0 auto;
+}
+
+/* ========== Submit Button ========== */
+.contact-form button {
+  background-color: #2d2dff;
+  color: white;
+  font-size: 1rem;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #1a1aff;
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 768px) {
+  .contact-section {
+    margin: 40px 20px;
+  }
+}
+
+/* General Button Style */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  margin: 0.5rem;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+/* Hover Effect */
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Disabled Button */
+.btn.disabled,
+.btn[aria-disabled="true"] {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.back-link {
+  display: inline-block;
+  padding: 0.65rem 1.25rem;
+  margin-top: 1rem;
+  background-color: #f0f0f0;
+  color: #333;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.back-link:hover {
+  background-color: #e0e0e0;
+  border-color: #999;
+  color: #000;
+}
+
+/* ========== Reusable Button Style ========== */
+.button {
+  display: inline-block;
+  padding: 10px 24px;
+  background-color: #1a1aff;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0000cc;
+  transform: scale(1.05);
+}
+
+
+/* 5. Footer */
+.footer {
+  background-color: #0a192f; /* Dark background for contrast */
+  color: #ccd6f6;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  border-top: 1px solid #112240;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer .social-icons {
+  margin-top: 10px;
+}
+
+.footer .social-icons a {
+  color: #ccd6f6;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+  color: #64ffda;
+}

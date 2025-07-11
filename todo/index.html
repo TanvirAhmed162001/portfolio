@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List with Priority & Editing</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="todo-container">
+        <div class="theme-toggle">
+            <label class="switch">
+                <input type="checkbox" id="theme-switch">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <h1>My To-Do List</h1>
+        <form id="todo-form">
+            <input type="text" id="todo-input" placeholder="Add a new task..." required />
+            <select id="priority-select">
+                <option value="low">Low</option>
+                <option value="medium" selected>Medium</option>
+                <option value="high">High</option>
+            </select>
+            <button type="submit">Add</button>
+        </form>
+        <div class="filters">
+            <button data-filter="all" class="filter-btn active">All</button>
+            <button data-filter="active" class="filter-btn">Active</button>
+            <button data-filter="completed" class="filter-btn">Completed</button>
+        </div>
+        <ul id="todo-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
